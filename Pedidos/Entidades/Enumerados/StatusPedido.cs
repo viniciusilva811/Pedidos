@@ -4,7 +4,14 @@ using System.Text;
 
 namespace Pedidos.Entidades.Enumerados
 {
-    class StatusPedido
-    {
+    
+        enum StatusPedido : int
+        {
+            PendingPayment = 0,
+            Processing = 1,
+            Shipped = 2,
+            Delivered = 3
+        }
     }
-}
+
+
